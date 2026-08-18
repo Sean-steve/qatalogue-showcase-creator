@@ -121,7 +121,7 @@ function Contact() {
             ) : (
               <form onSubmit={handleSubmit} className="mt-9 space-y-6">
                 <div className="grid gap-6 sm:grid-cols-2">
-                  <Field label="Your name" error={errors.name} required>
+                  <Field label="Your name" error={errors["name"]} required>
                     <Input
                       value={form.name}
                       onChange={(e) => update("name")(e.target.value)}
@@ -129,7 +129,7 @@ function Contact() {
                       autoComplete="name"
                     />
                   </Field>
-                  <Field label="Company" error={errors.company}>
+                  <Field label="Company" error={errors["company"]}>
                     <Input
                       value={form.company}
                       onChange={(e) => update("company")(e.target.value)}
@@ -137,7 +137,7 @@ function Contact() {
                       autoComplete="organization"
                     />
                   </Field>
-                  <Field label="Email" error={errors.email} required>
+                  <Field label="Email" error={errors["email"]} required>
                     <Input
                       type="email"
                       value={form.email}
@@ -146,7 +146,7 @@ function Contact() {
                       autoComplete="email"
                     />
                   </Field>
-                  <Field label="Phone / WhatsApp" error={errors.phone}>
+                  <Field label="Phone / WhatsApp" error={errors["phone"]}>
                     <Input
                       value={form.phone}
                       onChange={(e) => update("phone")(e.target.value)}
@@ -154,14 +154,14 @@ function Contact() {
                       autoComplete="tel"
                     />
                   </Field>
-                  <Field label="Site location" error={errors.location}>
+                  <Field label="Site location" error={errors["location"]}>
                     <Input
                       value={form.location}
                       onChange={(e) => update("location")(e.target.value)}
                       placeholder="Town / county"
                     />
                   </Field>
-                  <Field label="Estimated monthly requirement" error={errors.monthly_requirement}>
+                  <Field label="Estimated monthly requirement" error={errors["monthly_requirement"]}>
                     <Input
                       value={form.monthly_requirement}
                       onChange={(e) => update("monthly_requirement")(e.target.value)}
@@ -194,7 +194,7 @@ function Contact() {
                   </div>
                 </fieldset>
 
-                <Field label="Anything else we should know?" error={errors.message}>
+                <Field label="Anything else we should know?" error={errors["message"]}>
                   <Textarea
                     value={form.message}
                     onChange={(e) => update("message")(e.target.value)}
@@ -278,8 +278,8 @@ function Field({
   children,
 }: {
   label: string;
-  error?: string;
-  required?: boolean;
+  error?: string | undefined;
+  required?: boolean | undefined;
   children: React.ReactNode;
 }) {
   return (
