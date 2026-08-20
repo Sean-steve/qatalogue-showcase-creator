@@ -22,13 +22,6 @@ jobs:
       - name: Build project
         run: bun run build
 
-      - name: Show build output
-        run: |
-          echo "=== Root files ==="
-                ls -la
-          echo "=== Directories ==="
-          find . -maxdepth 2 -type d
-
       - name: Deploy to cPanel
         uses: SamKirkland/FTP-Deploy-Action@v4.3.6
         with:
@@ -37,5 +30,5 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           protocol: ftp
           port: 21
-          local-dir: dist/
+          local-dir: .output/public/
           server-dir: /
