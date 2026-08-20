@@ -16,4 +16,5 @@ export default defineConfig({
     server: {
       allowedHosts: ["qatalogue-showcase-creator.onrender.com"],
     },
+   },
 });
