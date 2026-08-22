@@ -44,6 +44,12 @@ export function SiteFooter() {
               </Link>
             </li>
             <li>
+              <Link to="/services" className="transition-colors hover:text-white">
+                Boiler & Steam Services
+              </Link>
+            </li>
+
+            <li>
               <Link to="/contact" className="transition-colors hover:text-white">
                 Request a quote
               </Link>

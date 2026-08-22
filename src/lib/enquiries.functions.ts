@@ -7,7 +7,7 @@ export const enquirySchema = z.object({
   email: z.string().trim().email("Enter a valid email address").max(200),
   phone: z.string().trim().max(60).optional().or(z.literal("")),
   location: z.string().trim().max(120).optional().or(z.literal("")),
-  interests: z.array(z.string().max(80)).max(10).default([]),
+  interests: z.array(z.string().max(80)).max(40).default([]),
   monthly_requirement: z.string().trim().max(120).optional().or(z.literal("")),
   message: z.string().trim().max(4000).optional().or(z.literal("")),
 });
