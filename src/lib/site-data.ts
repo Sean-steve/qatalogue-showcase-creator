@@ -47,9 +47,10 @@ export const company = {
   strapline:
     "Wood chips. Industrial firewood. Briquettes. Biomass recovery. Helping Kenyan industries access dependable alternative fuels while creating value from agricultural and forestry residues.",
   email: "sales@qatalogue.co.ke",
-  phone: "+254 700 000 000",
-  whatsapp: "254700000000",
+  phone: "+254 720 254253",
+  whatsapp: "254720254253",
   location: "Nairobi, Kenya",
+
 };
 
 export type Product = {
@@ -162,17 +163,38 @@ export const feedstocks = [
     description:
       "Residues from forestry and wood-processing operations, recovered and prepared as industrial biomass fuel.",
   },
+  {
+    name: "Used Tyres",
+    image: images.usedTyres,
+    description:
+      "End-of-life tyres are a high-energy waste stream we can help recover and channel into licensed, appropriately permitted industrial energy and co-processing applications — keeping them out of dumpsites, subject to environmental compliance and technical suitability.",
+  },
 ];
 
 export const interestOptions = [
   "Wood Chips",
   "Industrial Firewood",
-  "Briquettes",
-  "Biomass Feedstock Supply",
-  "Biomass Fuel Assessment",
+  "Industrial Briquettes",
+  "Sawdust",
+  "Coffee Husks",
+  "Macadamia Shells",
+  "Maize Cobs",
+  "Rice Husks",
+  "Pine Cones & Forestry Residues",
+  "Bagasse",
+  "Wood Residues",
+  "Used Tyres",
+  "Boiler Supply & Installation",
+  "Boiler Fuel Conversion",
+  "Boiler Maintenance & Servicing",
+  "Boiler Efficiency Assessment",
+  "Steam System Solutions",
+  "Boiler Water Treatment",
+  "Steam Energy Consulting",
   "Waste Recovery Partnership",
   "Other",
 ];
+
 
 export const services = [
   {
