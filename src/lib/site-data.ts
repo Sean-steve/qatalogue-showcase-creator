@@ -183,7 +183,7 @@ export const interestOptions = [
   "Pine Cones & Forestry Residues",
   "Bagasse",
   "Wood Residues",
-  "Used Tyres",
+  "Used Truck Tyres",
   "Boiler Supply & Installation",
   "Boiler Fuel Conversion",
   "Boiler Maintenance & Servicing",
