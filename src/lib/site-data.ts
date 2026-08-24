@@ -164,10 +164,10 @@ export const feedstocks = [
       "Residues from forestry and wood-processing operations, recovered and prepared as industrial biomass fuel.",
   },
   {
-    name: "Used Tyres",
+    name: "Used Truck Tyres",
     image: images.usedTyres,
     description:
-      "End-of-life tyres are a high-energy waste stream we can help recover and channel into licensed, appropriately permitted industrial energy and co-processing applications — keeping them out of dumpsites, subject to environmental compliance and technical suitability.",
+      "Qatalogue is exploring opportunities within waste recovery and waste-to-energy, including the responsible collection and processing of used truck tyres. This is a separate waste-derived fuel opportunity and is not part of our renewable biomass feedstock portfolio — any tyre-processing or tyre-derived fuel activity would be undertaken subject to applicable Kenyan environmental, waste-management and other regulatory requirements.",
   },
 ];
 
@@ -183,7 +183,7 @@ export const interestOptions = [
   "Pine Cones & Forestry Residues",
   "Bagasse",
   "Wood Residues",
-  "Used Tyres",
+  "Used Truck Tyres",
   "Boiler Supply & Installation",
   "Boiler Fuel Conversion",
   "Boiler Maintenance & Servicing",
