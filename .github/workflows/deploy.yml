@@ -44,24 +44,24 @@ jobs:
           echo "NO .output DIRECTORY"
           fi
 
-      - name: Prepare deployment files
-        run: |
-          rm -rf deploy-output
-          mkdir deploy-output
-          cp -R dist/client/. deploy-output/
+      # - name: Prepare deployment files
+      #   run: |
+      #     rm -rf deploy-output
+      #     mkdir deploy-output
+      #     cp -R dist/client/. deploy-output/
 
-          cat > deploy-output/.cpanel.yml <<'EOF'
-          ---
-          deployment:
-            tasks:
-              - export DEPLOYPATH=/home/qatalogu/public_html/
-              - /bin/cp -R ./* $DEPLOYPATH
-          EOF
+      #     cat > deploy-output/.cpanel.yml <<'EOF'
+      #     ---
+      #     deployment:
+      #       tasks:
+      #         - export DEPLOYPATH=/home/qatalogu/public_html/
+      #         - /bin/cp -R ./* $DEPLOYPATH
+      #     EOF
 
-      - name: Publish deployment branch
-        uses: peaceiris/actions-gh-pages@v4
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./deploy-output
-          publish_branch: cpanel-deploy
-          force_orphan: true
+      # - name: Publish deployment branch
+      #   uses: peaceiris/actions-gh-pages@v4
+      #   with:
+      #     github_token: ${{ secrets.GITHUB_TOKEN }}
+      #     publish_dir: ./deploy-output
+      #     publish_branch: cpanel-deploy
+      #     force_orphan: true
