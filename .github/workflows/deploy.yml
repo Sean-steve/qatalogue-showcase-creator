@@ -25,6 +25,25 @@ jobs:
       - name: Build static site
         run: bun run build
 
+      - name: Inspect build output
+        run: |
+          echo "=== ROOT ==="
+          ls -la
+
+          echo "=== DIST ==="
+          if [ -d "dist" ]; then
+          find dist -maxdepth 3 -type f | head -100
+          else
+          echo "NO dist DIRECTORY"
+          fi
+
+          echo "=== OUTPUT ==="
+          if [ -d ".output" ]; then
+          find .output -maxdepth 3 -type f | head -100
+          else
+          echo "NO .output DIRECTORY"
+          fi
+
       - name: Prepare deployment files
         run: |
           rm -rf deploy-output
