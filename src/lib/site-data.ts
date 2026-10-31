@@ -46,7 +46,7 @@ export const company = {
   tagline: "Turning Biomass & Waste Into Reliable Industrial Energy",
   strapline:
     "Wood chips. Industrial firewood. Briquettes. Biomass recovery. Helping Kenyan industries access dependable alternative fuels while creating value from agricultural and forestry residues.",
-  email: "sales@qatalogue.co.ke",
+  email: "sales@qataloguelimited.co.ke",
   phone: "+254 720 254253",
   whatsapp: "254720254253",
   location: "Nairobi, Kenya",
